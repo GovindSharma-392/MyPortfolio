@@ -1,0 +1,27 @@
+.projects {
+    padding: 50px;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    margin: 20px;
+  }
+  
+  .project-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  
+  .project h5 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  

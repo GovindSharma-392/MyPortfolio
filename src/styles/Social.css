@@ -1,0 +1,16 @@
+.socials {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .social-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .socials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  

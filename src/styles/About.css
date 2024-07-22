@@ -1,0 +1,68 @@
+.about {
+    /* text-align: center; */
+    padding: 50px;
+    margin-bottom: 0; 
+    height: 400px;
+    /* background: linear-gradient(-45deg, #a3874d, #c45e85, #23a6d5, #23d5ab); */
+
+  }
+  
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 200px;
+    margin: 100px;
+    border: 2px solid black;
+  }
+  .profile-img:hover{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: 0.3s ease-out;
+  }
+  .imageadjust{
+    width: 50%;
+    height: 100%;
+  }
+  
+  /* .about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  } */
+   h2{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-style: oblique;
+   }
+  .aboutinfo{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .Aboutme{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .social-media-icons {
+    margin-left: 50px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #0073e6; /* Change to any color you prefer */
+    transform: scale(1.1);
+  }

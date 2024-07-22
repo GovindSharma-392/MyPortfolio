@@ -1,8 +1,6 @@
 import React from 'react';
 import '../styles/Social.css';
 import finalLogoImg from '../img/LOGO.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faLinkedinIn, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Socials = () => {
   return (

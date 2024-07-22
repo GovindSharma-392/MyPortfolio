@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Skills.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJava, faHtml5, faCss3, faJs, faGithub, faNodeJs, faReact, faPython } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 

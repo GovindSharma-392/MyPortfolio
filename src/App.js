@@ -21,7 +21,7 @@ function App() {
       <Projects />
       <Skills/>
       <Hobbies />
-      <Socials />
+      {/* <Socials /> */}
       <ContactDetails />
       <ScrollButton />
     </div>

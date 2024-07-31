@@ -13,16 +13,7 @@ const Hobbies = () => {
       <Card imgSrc={writingImg} title={"Writing"}/>
       </div>
       
-      {/* 
-        <div className="hobby">
-          <img src={musicImg} alt="Music" className="hobby-img" />
-          <h5>Music</h5>
-        </div>
-        <div className="hobby">
-          <img src={writingImg} alt="Writing" className="hobby-img" />
-          <h5>Writing</h5>
-        </div>
-      </div> */}
+      
     </section>
   );
 }

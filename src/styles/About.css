@@ -3,6 +3,7 @@
     padding: 50px;
     margin-bottom: 0; 
     height: 400px;
+    color: aliceblue;
     /* background: linear-gradient(-45deg, #a3874d, #c45e85, #23a6d5, #23d5ab); */
 
   }
@@ -41,6 +42,7 @@
     height: 300px;
     display: flex;
     flex-direction: row;
+    color: aliceblue;
     
   }
   .Aboutme{
@@ -58,11 +60,19 @@
   
   .social-icon {
     font-size: 24px;
-    color: #333;
+    color:aliceblue;
     transition: color 0.3s ease, transform 0.3s ease;
   }
   
   .social-icon:hover {
     color: #0073e6; /* Change to any color you prefer */
     transform: scale(1.1);
+  }
+  .designation{
+    width: 400px;
+    height: 10px;
+    font-size: 30px;
+  }
+  .define{
+    margin-left: 0;
   }

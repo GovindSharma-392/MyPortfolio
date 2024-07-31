@@ -5,6 +5,7 @@ import Mern_certificate  from '../img/mern certificate.pdf'
 const Experience = () => {
   return (
     <section id="Experience" className="Experience">
+      <div className='maindivEx'>
       <h2 className='textmargin'>Experience</h2>
       <h4 className='textmargin'>AppSquadz Software Pvt Ltd | MERN stack Intern</h4>
       <p>
@@ -14,6 +15,7 @@ const Experience = () => {
           Certificate &rarr;
         </button>
       </a>
+      </div>
 
     </section>
   );

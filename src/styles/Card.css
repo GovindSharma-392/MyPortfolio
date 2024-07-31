@@ -1,9 +1,10 @@
 .card {
   border: 2px solid #ddd;
-  width: 300px; /* Adjust as needed */
+  width: 100%;
+  max-width: 300px; /* Maximum width for larger screens */
   border-radius: 10px;
   overflow: hidden;
-  margin: 20px;
+  margin: 20px auto; /* Center align and add margin */
   position: relative; /* Necessary for absolute positioning of buttons */
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -18,7 +19,7 @@
 
 .card-img {
   width: 100%;
-  height: 200px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
   object-fit: cover;
 }
 
@@ -40,7 +41,7 @@
 }
 
 .card-description {
-  font-size: 20px;
+  font-size: 1rem; /* Use responsive units */
   text-align-last: left;
   margin-bottom: 15px; /* Space between description and buttons */
 }
@@ -78,10 +79,77 @@ h5 {
 .card:hover h5 {
   color: black; /* Change text color on hover */
 }
+
 .card:hover p {
   color: black; /* Change text color on hover */
 }
 
 .card:hover .btn {
   color: white; /* Ensure button text color remains white */
+}
+
+/* Media queries for responsive design */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .card {
+    width: 90%; /* Full width on small screens */
+    margin: 10px auto; /* Reduce margin */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  .card-description {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card {
+    width: 80%; /* Adjust width */
+    margin: 15px auto; /* Adjust margin */
+  }
+
+  .card-title {
+    font-size: 1.1rem; /* Adjust font size */
+  }
+
+  .card-description {
+    font-size: 1rem; /* Adjust font size */
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card {
+    width: 70%; /* Adjust width */
+    margin: 20px auto; /* Adjust margin */
+  }
+
+  .card-title {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+
+  .card-description {
+    font-size: 1.1rem; /* Adjust font size */
+  }
+}
+
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card {
+    width: 60%; /* Adjust width */
+    margin: 20px auto; /* Adjust margin */
+  }
+
+  .card-title {
+    font-size: 1.3rem; /* Adjust font size */
+  }
+
+  .card-description {
+    font-size: 1.2rem; /* Adjust font size */
+  }
 }

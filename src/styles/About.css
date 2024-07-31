@@ -1,78 +1,172 @@
 .about {
-    /* text-align: center; */
-    padding: 50px;
-    margin-bottom: 0; 
-    height: 400px;
-    color: aliceblue;
-    /* background: linear-gradient(-45deg, #a3874d, #c45e85, #23a6d5, #23d5ab); */
+  padding: 50px;
+  margin-bottom: 0; 
+  height: auto; /* Remove fixed height for flexibility */
+  color: aliceblue;
+}
 
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 50px auto; /* Center align on small screens */
+  border: 2px solid black;
+  transition: width 0.3s ease, height 0.3s ease; /* Add transition for smooth resizing */
+}
+
+.profile-img:hover {
+  width: 250px;
+  height: 250px;
+}
+
+.imageadjust {
+  width: 50%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 2rem; /* Use responsive units */
+  font-family: sans-serif;
+  font-style: oblique;
+}
+
+.aboutinfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack items vertically by default */
+  color: aliceblue;
+  align-items: center; /* Center align content on small screens */
+}
+
+.Aboutme {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center; /* Center align content on small screens */
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Center align icons */
+}
+
+.social-icon {
+  font-size: 24px;
+  color: aliceblue;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #0073e6;
+  transform: scale(1.1);
+}
+
+.designation {
+  width: auto; /* Adjust width for flexibility */
+  height: auto;
+  font-size: 1.5rem; /* Use responsive units */
+  text-align: center; /* Center align text */
+}
+
+.define {
+  margin-left: 0;
+}
+
+/* Media queries for responsive design */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .designation {
+    font-size: 1.2rem;
+  }
+  
+  .aboutinfo {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align content */
+  }
+  
+  .Aboutme {
+    width: 100%;
+    align-items: center; /* Center align content */
+  }
+  
+  .social-media-icons {
+    margin-left: 0; /* Reset margin */
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .designation {
+    font-size: 1.3rem;
+  }
+  
+  .aboutinfo {
+    flex-direction: column; /* Stack items vertically on smaller tablets */
+    align-items: center; /* Center align content */
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .designation {
+    font-size: 1.4rem;
+  }
+  
+  .aboutinfo {
+    flex-direction: column; /* Stack items vertically on medium screens */
+    align-items: center; /* Center align content */
+  }
+}
+
+/* Large devices (larger desktops, 992px and up) */
+@media (min-width: 992px) {
+  .aboutinfo {
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-between; /* Space out items */
+    align-items: flex-start; /* Align items at the top */
+    width: 100%; /* Full width */
+  }
+  
+  .Aboutme {
+    width: 50%; /* 50% width for Aboutme section */
+    margin-top: 0; /* Reset margin */
+    align-items: flex-start; /* Align items to the start */
   }
   
   .profile-img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    margin-right: 200px;
-    margin: 100px;
-    border: 2px solid black;
+    margin: 0; /* Reset margin */
   }
-  .profile-img:hover{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 2px solid black;
-    transition: 0.3s ease-out;
-  }
-  .imageadjust{
-    width: 50%;
-    height: 100%;
-  }
-  
-  /* .about h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  } */
-   h2{
-    font-size: 50px;
-    font-family: sans-serif;
-    font-style: oblique;
-   }
-  .aboutinfo{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    color: aliceblue;
-    
-  }
-  .Aboutme{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-  }
-  .social-media-icons {
-    margin-left: 50px;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .social-icon {
-    font-size: 24px;
-    color:aliceblue;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    color: #0073e6; /* Change to any color you prefer */
-    transform: scale(1.1);
-  }
-  .designation{
-    width: 400px;
-    height: 10px;
-    font-size: 30px;
-  }
-  .define{
-    margin-left: 0;
-  }
+}

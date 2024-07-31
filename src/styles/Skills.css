@@ -1,40 +1,152 @@
 .Skills {
-    margin-top: 150px;
-    height: auto;
-    padding: 50px;
-    /* background-color: #f7f7f7; */
-  }
-  .Skillsbox {
-    display: grid;              /* Enable CSS Grid layout */
-    grid-template-columns: repeat(4, 1fr); /* Create 3 equal columns */
-    gap: 20px;                  /* Add spacing between items */
-    margin: 20px;               /* Margin around the container */
-  }
-  
+  margin-top: 150px;
+  height: auto;
+  padding: 50px;
+  /* background-color: #f7f7f7; */
+}
 
-  
-  .Skills ul {
-    list-style: none;
-    padding: 0;
+.Skillsbox {
+  display: grid;              /* Enable CSS Grid layout */
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  gap: 20px;                  /* Add spacing between items */
+  margin: 20px;               /* Margin around the container */
+}
+
+.Skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Skills li {
+  margin-bottom: 10px;
+  font-size: 1rem; /* Use responsive units */
+}
+
+p {
+  margin: 20px; /* Adjust margin for better spacing on smaller screens */
+}
+
+.aboutbtn {
+  width: 150px;
+  height: 50px;
+  margin-left: 5%;
+  border: 2px solid rgb(65, 64, 64);
+  text-align: center; /* Center text in button */
+  line-height: 50px; /* Center text vertically */
+  display: inline-block; /* Adjust display to inline-block */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background color and text color */
+}
+
+.aboutbtn:hover {
+  width: 150px;
+  height: 50px;
+  margin-left: 5%;
+  border-radius: 25px;
+  background-color: #0073e6; /* Background color on hover */
+  color: white; /* Text color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+/* Media queries for responsive design */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .Skills {
+    padding: 20px; /* Reduce padding */
   }
-  
+
+  .Skillsbox {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 10px; /* Reduce gap between items */
+  }
+
   .Skills li {
-    margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 14px; /* Smaller font size */
   }
-  p{
-    margin: 50px;
+
+  p {
+    margin: 10px; /* Reduce margin */
   }
-  .aboutbtn{
-    width: 150px;
-    height: 50px;
-    margin-left: 5%;
-    border: 2px solid rgb(65, 64, 64);
+
+  .aboutbtn {
+    width: 120px; /* Adjust width */
+    height: 40px; /* Adjust height */
+    font-size: 14px; /* Adjust font size */
+    margin-left: 0; /* Center align on small screens */
   }
-  .aboutbtn:hover{
-    width: 150px;
-    height: 50px;
-    margin-left: 5%;
-    border-radius: 25px;
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .Skills {
+    padding: 30px; /* Adjust padding */
   }
-  
+
+  .Skillsbox {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller tablets */
+    gap: 15px; /* Reduce gap between items */
+  }
+
+  .Skills li {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  p {
+    margin: 20px; /* Adjust margin */
+  }
+
+  .aboutbtn {
+    width: 130px; /* Adjust width */
+    height: 45px; /* Adjust height */
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .Skills {
+    padding: 40px; /* Adjust padding */
+  }
+
+  .Skillsbox {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    gap: 20px; /* Default gap between items */
+  }
+
+  .Skills li {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  p {
+    margin: 30px; /* Adjust margin */
+  }
+
+  .aboutbtn {
+    width: 140px; /* Adjust width */
+    height: 50px; /* Adjust height */
+  }
+}
+
+/* Large devices (larger desktops, 992px and up) */
+@media (min-width: 992px) {
+  .Skills {
+    padding: 50px; /* Default padding */
+  }
+
+  .Skillsbox {
+    grid-template-columns: repeat(4, 1fr); /* Default 4 columns */
+    gap: 20px; /* Default gap between items */
+  }
+
+  .Skills li {
+    font-size: 18px; /* Default font size */
+  }
+
+  p {
+    margin: 50px; /* Default margin */
+  }
+
+  .aboutbtn {
+    width: 150px; /* Default width */
+    height: 50px; /* Default height */
+  }
+}

@@ -1,42 +1,135 @@
 .education {
-    /* margin-top: 10px; */
-    height: 400px;
-    padding: 50px;
-    /* background-color: #f7f7f7; */
-  }
-  
+  height: auto; /* Remove fixed height for flexibility */
+  padding: 50px;
+  /* background-color: #f7f7f7; */
+}
 
-  
-  .education ul {
-    list-style: none;
-    padding: 0;
+.education ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education li {
+  margin-bottom: 10px;
+  font-size: 1rem; /* Use responsive units */
+}
+
+p {
+  margin: 20px; /* Adjust margin for better spacing */
+}
+
+.aboutbtn {
+  width: 150px;
+  height: 50px;
+  margin-left: 5%;
+  border: 2px solid rgb(65, 64, 64);
+  text-align: center; /* Center text in button */
+  line-height: 50px; /* Center text vertically */
+  display: inline-block; /* Adjust display to inline-block */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background color */
+}
+
+.aboutbtn:hover {
+  width: 150px;
+  height: 50px;
+  margin-left: 5%;
+  border-radius: 25px;
+  background-color: #0073e6; /* Background color on hover */
+  color: white; /* Text color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.maindiv {
+  width: 98%;
+  height: auto;
+  margin-right: auto; /* Center align div */
+  margin-left: auto; /* Center align div */
+  border-radius: 30px;
+  background-color: rgba(218, 213, 213, 0.148);
+  padding: 20px;
+  text-decoration: solid;
+}
+
+/* Media queries for responsive design */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .education {
+    padding: 20px; /* Reduce padding */
   }
-  
+
   .education li {
-    margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px; /* Smaller font size */
   }
-  p{
-    margin: 50px;
+
+  p {
+    margin: 10px; /* Reduce margin */
   }
-  .aboutbtn{
-    width: 150px;
-    height: 50px;
-    margin-left: 5%;
-    border: 2px solid rgb(65, 64, 64);
+
+  .aboutbtn {
+    width: 120px; /* Adjust width */
+    height: 40px; /* Adjust height */
+    margin-left: 0; /* Center align on small screens */
+    font-size: 14px; /* Adjust font size */
   }
-  .aboutbtn:hover{
-    width: 150px;
-    height: 50px;
-    margin-left: 5%;
-    border-radius: 25px;
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .education {
+    padding: 30px; /* Adjust padding */
   }
-  .maindiv{
-    width: 98%;
-    height: auto;
-    margin-right: 30px;
-    border-radius: 30px;
-    background-color: rgba(218, 213, 213, 0.148);
-    padding: 20px;
-    text-decoration: solid;
+
+  .education li {
+    font-size: 17px; /* Adjust font size */
   }
+
+  p {
+    margin: 20px; /* Adjust margin */
+  }
+
+  .aboutbtn {
+    width: 130px; /* Adjust width */
+    height: 45px; /* Adjust height */
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .education {
+    padding: 40px; /* Adjust padding */
+  }
+
+  .education li {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  p {
+    margin: 30px; /* Adjust margin */
+  }
+
+  .aboutbtn {
+    width: 140px; /* Adjust width */
+    height: 50px; /* Adjust height */
+  }
+}
+
+/* Large devices (larger desktops, 992px and up) */
+@media (min-width: 992px) {
+  .education {
+    padding: 50px; /* Default padding */
+  }
+
+  .education li {
+    font-size: 18px; /* Default font size */
+  }
+
+  p {
+    margin: 50px; /* Default margin */
+  }
+
+  .aboutbtn {
+    width: 150px; /* Default width */
+    height: 50px; /* Default height */
+  }
+}

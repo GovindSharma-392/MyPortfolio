@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Education.css';
-import Resume from '../img/Govind_Resumemodified.pdf'
+import Resume from '../img/Govind_Resume.pdf'
 
 const Education = () => {
   return (
